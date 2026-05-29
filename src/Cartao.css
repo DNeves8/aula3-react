@@ -20,38 +20,20 @@
 }
 
 .cartao--destaque {
-  border-left: 5px solid #01696F;
+  border-top: 4px solid #01696F;
   background-color: #f7fcfe;
 }
 
 .cartao h3 {
   color: #01696F;
   margin-top: 0;
-  border-bottom: 2px solid #eef7f8;
-  padding-bottom: 8px;
 }
 
-.cartao h4 {
-  color: #333;
-  margin-bottom: 8px;
-}
-
-.cartao ul {
-  padding-left: 20px;
-  color: #555;
-}
-
-.cartao li {
-  margin-bottom: 4px;
-}
-
-/* Estilos da Barra de Progresso (Desafio Bônus) */
 .barra-progresso-bg {
   background-color: #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
-  margin-top: 10px;
 }
 
 .barra-progresso-fill {
@@ -61,5 +43,4 @@
   font-size: 12px;
   font-weight: bold;
   padding: 4px 0;
-  transition: width 0.5s ease-in-out;
 }
