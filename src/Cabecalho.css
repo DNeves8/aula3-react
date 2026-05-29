@@ -1,0 +1,19 @@
+.cabecalho {
+  background-color: #01696F;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.cabecalho p {
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
