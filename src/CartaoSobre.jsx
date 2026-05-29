@@ -1,7 +1,7 @@
 import "./Cartao.css";
 
 function CartaoSobre() {
-  const nome = "Seu Nome";
+  const nome = "Davi";
   const curso = "Análise e Desenvolvimento de Sistemas";
   const hobbies = ["Programar", "Jogar", "Assistir Séries"];
 
