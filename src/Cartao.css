@@ -1,0 +1,46 @@
+/* src/Cartao.css */
+
+.cartao {
+  padding: 20px;
+  border: 2px solid #01696F;
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+/* Desafio Bônus: Classe que muda o fundo se o cartão for destaque */
+.cartao--destaque {
+  background-color: #e6f4f5;
+  border-color: #004d52;
+}
+
+.cartao h3 {
+  color: #01696F;
+  margin-top: 0;
+   Riosize: 24px;
+}
+
+.cartao li {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.cartao li.destaque {
+  font-weight: bold;
+  color: #1E2A2E;
+  list-style-type: none;
+}
+
+.cartao button {
+  background-color: #01696F;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
