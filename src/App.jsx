@@ -1,10 +1,12 @@
 import Saudacao from "./Saudacao";
+import Cartao from "./Cartao";
 
 function App() {
   return (
-    <div>
+    <>
       <Saudacao />
-    </div>
+      <Cartao />
+    </>
   );
 }
 
