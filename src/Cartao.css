@@ -1,46 +1,65 @@
-/* src/Cartao.css */
+.container-cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .cartao {
-  padding: 20px;
-  border: 2px solid #01696F;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 12px;
-  max-width: 420px;
-  margin: 20px auto;
-  background-color: #f9f9f9;
+  padding: 24px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   font-family: sans-serif;
 }
 
-/* Desafio Bônus: Classe que muda o fundo se o cartão for destaque */
 .cartao--destaque {
-  background-color: #e6f4f5;
-  border-color: #004d52;
+  border-left: 5px solid #01696F;
+  background-color: #f7fcfe;
 }
 
 .cartao h3 {
   color: #01696F;
   margin-top: 0;
-   Riosize: 24px;
+  border-bottom: 2px solid #eef7f8;
+  padding-bottom: 8px;
 }
 
-.cartao li {
-  color: #555;
+.cartao h4 {
+  color: #333;
   margin-bottom: 8px;
 }
 
-.cartao li.destaque {
-  font-weight: bold;
-  color: #1E2A2E;
-  list-style-type: none;
+.cartao ul {
+  padding-left: 20px;
+  color: #555;
 }
 
-.cartao button {
+.cartao li {
+  margin-bottom: 4px;
+}
+
+/* Estilos da Barra de Progresso (Desafio Bônus) */
+.barra-progresso-bg {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.barra-progresso-fill {
   background-color: #01696F;
   color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 10px;
-  width: 100%;
+  padding: 4px 0;
+  transition: width 0.5s ease-in-out;
 }

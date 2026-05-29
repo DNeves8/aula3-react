@@ -1,7 +1,7 @@
 import Cabecalho from "./Cabecalho";
 import Saudacao from "./Saudacao";
 import Cartao from "./Cartao";
-import Rodape from "./Rodape"; // Import do desafio bônus
+import Rodape from "./Rodape";
 
 function App() {
   return (

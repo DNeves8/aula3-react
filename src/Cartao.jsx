@@ -1,39 +1,47 @@
-// 1. Importando o arquivo CSS externo
 import "./Cartao.css";
 
-function porcentagem(parte, total) {
-  return Math.round((parte / total) * 100);
-}
-
 function Cartao() {
-  const titulo = "Sobre a Aula 3";
-  const totalTopicos = 5;
-  const concluidos = 3;
-  const progressoAtual = porcentagem(concluidos, totalTopicos);
+  // Dados para o bloco "Sobre Mim"
+  const nome = "Seu Nome"; 
+  const curso = "Análise e Desenvolvimento de Sistemas";
+  const hobbies = ["Programar", "Jogar", "Ouvir Música"];
 
-  // Variável para o Desafio Bônus (mude para false se quiser testar a cor normal)
-  const éDestaque = true; 
+  // Dados para o bloco "Aulas"
+  const totalAulas = 15;
+  const aulasAssistidas = 3;
 
   return (
-    /* 2. Aplicando classe condicional do Desafio Bônus */
-    <div className={éDestaque ? "cartao cartao--destaque" : "cartao"}>
-      
-      <h3>{titulo}</h3>
-      
-      <p>Progresso: {progressoAtual}%</p>
-      <p>Faltam {totalTopicos - concluidos} tópicos para terminar.</p>
-      <p>Status: {progressoAtual >= 50 ? "No caminho certo! 🚀" : "Mãos à obra! 💻"}</p>
+    <div className="container-cartoes">
+      {/* Cartão 1: Sobre Mim */}
+      <div className="cartao">
+        <h3>Sobre Mim</h3>
+        <p><strong>Nome:</strong> {nome}</p>
+        <p><strong>Curso:</strong> {curso}</p>
+        <h4>Meus Hobbies:</h4>
+        <ul>
+          {hobbies.map((hobby, index) => (
+            <li key={index}>{hobby}</li>
+          ))}
+        </ul>
+      </div>
 
-      <ul style={{ paddingLeft: "10px" }}>
-        {/* 3. Usando a classe de destaque no primeiro li */}
-        <li className="destaque">✓ O que é React</li>
-        <li>✓ Sintaxe JSX</li>
-        <li>✓ Componentes funcionais</li>
-      </ul>
-
-      <button onClick={() => alert("Bons estudos na Aula 3! 🎉")}>
-        Clique Aqui
-      </button>
+      {/* Cartão 2: Aulas */}
+      <div className="cartao cartao--destaque">
+        <h3>Minhas Aulas</h3>
+        <p>Este semestre conta com um total de <strong>{totalAulas}</strong> aulas planejadas.</p>
+        <p>Progresso atual: {aulasAssistidas} de {totalAulas} concluídas.</p>
+        
+        {/* Desafio Bônus: Barra de Progresso Embutida */}
+        <h4>Progresso do Semestre:</h4>
+        <div className="barra-progresso-bg">
+          <div 
+            className="barra-progresso-fill" 
+            style={{ width: `${Math.round((aulasAssistidas / totalAulas) * 100)}%` }}
+          >
+            {Math.round((aulasAssistidas / totalAulas) * 100)}%
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
